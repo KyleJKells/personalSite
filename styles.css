@@ -1,0 +1,47 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#colorBox {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    transition: background-color 2.5s linear;
+  }
+
+#name{
+    display: flex;
+    justify-content: center;
+    color: black; 
+    -webkit-text-stroke: 1px white; 
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+.sun {
+    position: absolute;
+    bottom: 62vh;
+    left: 95vw;
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle at 30% 30%, #fff76b, #ffcc33);
+    border-radius: 50%;
+    animation: moveSun 12s ease-in-out forwards;
+    
+   
+  }
+
+ 
+  @keyframes moveSun {
+    0%   { transform: translateX(-300px) translateY(0);   opacity: 0.2; }
+    100% { transform: translateX(0) translateY(-200px);  opacity: 1; }
+  }
+
+
+ 
+
+
+  

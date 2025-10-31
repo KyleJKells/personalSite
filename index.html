@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Kyle Kells</title>
+</head >
 <body>
     
+    
+    <div id="colorBox">
+        <h1 id="name">Kyle Kells</h1>
+        <div class="sun"></div>
+    </div>
+   
+<script>
+    const box = document.getElementById('colorBox');
+      
+    // Define the colors for each phase
+    const colors = ["black", "#00008B", "#87CEFA", "D5FFFF"]
+    let index = 0;
+      
+    function changeColor() {
+        if (index < colors.length) {
+            box.style.backgroundColor = colors[index];
+            index++;
+        if (index < colors.length) {
+              
+            setTimeout(changeColor, 2500);
+            }
+          }
+        }
+    changeColor();
+</script>
 </body>
 </html>
