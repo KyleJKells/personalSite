@@ -20,7 +20,7 @@ body {
     color: black; 
     -webkit-text-stroke: 1px white; 
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 8px;
     padding: 5px;
 }
 
@@ -30,16 +30,33 @@ body {
 }
 .footer{
     text-align: center;
+    background-color: rgb(206, 239, 250);
     
 }
 
 h5 {
     font-weight: 100;
 }
+
+.topleft{
+    display: flex;
+    align-items: center;
+    
+}
+#logo{
+    width: auto;
+    height: 55px;
+    padding-left: 16px;
+}
+#lightdark{
+    width: auto;
+    height: 20px;
+}
+
 .sun {
     position: absolute;
     bottom: 62vh;
-    left: 95vw;
+    left: 80vw;
     width: 75px;
     height: 75px;
     background: radial-gradient(circle at 30% 30%, #fff76b, #ffcc33);
@@ -53,19 +70,21 @@ h5 {
     margin: 25px;
     display: flex;
     list-style-type: none;
+    align-items: center;
+    gap: 10px;
 
   }
 
   li {
     padding: 5px;
-    font-size: large;
+    font-size: x-large;
   }
 
 
  
   @keyframes moveSun {
-    0%   { transform: translateX(-300px) translateY(0);   opacity: 0.2; }
-    100% { transform: translateX(0) translateY(-200px);  opacity: 1; }
+    0%   { transform: translateX(-100px) translateY(0);   opacity: 0.2; }
+    100% { transform: translateX(0) translateY(-100px);  opacity: 1; }
   }
 
 
