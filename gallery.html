@@ -21,10 +21,25 @@
             </ul>
         </div>
     </div>
-    <div></div>
+    <div class="gallery-middle">
+        <div id="my-gallery"></div>
+    </div>
     <div class="footer">
         <h5 >Designed by Kyle Kells</h5>
     </div>
-    
+    <script src="https://product-gallery.cloudinary.com/all.js" type="text/javascript"></script>
+    <script>
+        const myGallery = cloudinary.galleryWidget({
+            container: '#my-gallery',
+            cloudName: 'dnbf5ygzp',
+            aspectRatio: "4:3",
+            mediaAssets: [{ 
+                tag: 'cdt',
+                transformation: { crop: "fill" }
+            }],
+            carouselStyle: 'none'
+            });
+        myGallery.render();
+        </script>   
 </body>
 </html>

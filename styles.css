@@ -30,8 +30,6 @@ body {
   }
 
 #name{
-    
-   
     color: black; 
     -webkit-text-stroke: 1px white; 
     font-weight: bold;
@@ -46,7 +44,6 @@ body {
 .footer{
     text-align: center;
     background-color: rgb(206, 239, 250);
-    
 }
 
 h5 {
@@ -77,9 +74,7 @@ h5 {
     background: radial-gradient(circle at 30% 30%, #fff76b, #ffcc33);
     border-radius: 50%;
     animation: moveSun 12s ease-in-out forwards;
-    z-index: 0;
-    
-   
+    z-index: 0; 
   }
 
   ul {
@@ -88,7 +83,6 @@ h5 {
     list-style-type: none;
     align-items: center;
     gap: 10px;
-
   }
 
   li {
@@ -96,14 +90,10 @@ h5 {
     font-size: x-large;
   }
 
-
- 
   @keyframes moveSun {
     0%   { transform: translateX(-100px) translateY(0);   opacity: 0.2; }
     100% { transform: translateX(0) translateY(-100px);  opacity: 1; }
   }
-
-
 
   .cloud {
     width: 180px;
@@ -193,5 +183,16 @@ h5 {
     100% { -webkit-transform: translateX(2100px); }
   }
 
+#my-gallery{
+    width: 50%;
+    height: 50%;
+    max-width: 1200px; /* or your preferred max width */
+    
+}
 
+.gallery-middle{
+    display: flex;
+    justify-content: center;
+    
+}
   
